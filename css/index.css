@@ -1,0 +1,412 @@
+body, ul, ol, dl, dd, h1, h2, h3, h4, h5, h6, p, input {
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: #000;
+  text-decoration: none; }
+
+ul, ol {
+  list-style: none; }
+
+b, strong, h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 14px; }
+
+i, em {
+  font-style: normal; }
+
+img, input {
+  vertical-align: top; }
+
+img {
+  border: none; }
+
+input {
+  outline: none; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.clear-fix:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.clear-fix {
+  zoom: 1; }
+
+body {
+  font-size: 20px; }
+
+header {
+  height: 2.2rem;
+  line-height: 2.2rem;
+  background-color: #fead4b;
+  position: relative;
+  padding: 0 0.8rem; }
+  header .leftBtn {
+    width: 0.525rem;
+    height: 0.95rem;
+    background: url(../img/leftBtn.png) no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.475rem;
+    left: 0.8rem; }
+  header h2 {
+    font-size: 0.85rem;
+    color: #fff;
+    text-align: center; }
+  header .share {
+    font-size: 0.75rem;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0.8rem;
+    line-height: 2.2rem; }
+
+.shareBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none; }
+
+.shareAll {
+  position: relative;
+  height: 100%; }
+
+.maskLayer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.shareCon {
+  position: absolute;
+  left: 0;
+  bottom: -5rem;
+  width: 100%;
+  background-color: #fff; }
+  .shareCon .shareKinds {
+    display: flex; }
+  .shareCon h4 {
+    flex: 1; }
+    .shareCon h4 a {
+      display: block;
+      width: 2.5rem;
+      height: 2.5rem;
+      margin: 1.25rem auto; }
+    .shareCon h4 .weixin {
+      background: url(../img/weixin.png) no-repeat center;
+      background-size: 100%; }
+    .shareCon h4 .pengyouquan {
+      background: url(../img/pengyouquan.png) no-repeat center;
+      background-size: 100%; }
+  .shareCon .close {
+    width: 0.8rem;
+    height: 0.8rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: url(../img/closeIcon.png) no-repeat center;
+    background-size: 100%; }
+
+.erweimaBox {
+  position: absolute;
+  bottom: -10.5rem;
+  left: 0;
+  width: 100%;
+  background-color: #fff; }
+  .erweimaBox .erweima {
+    display: flex; }
+  .erweimaBox .erweimaImg {
+    flex: 1;
+    width: 8.25rem;
+    height: 8.25rem;
+    margin-left: 1rem; }
+  .erweimaBox .erweimaImg2 {
+    width: 6rem;
+    height: 6rem;
+    margin: 1rem 0 1rem 1.5rem; }
+  .erweimaBox .code {
+    flex: 1; }
+    .erweimaBox .code canvas {
+      width: 6rem;
+      height: 6rem;
+      margin: 1rem 0 1rem 1.5rem;
+      display: none; }
+  .erweimaBox h4 {
+    flex: 1;
+    font-size: 0.8rem;
+    color: #323232;
+    line-height: 1.4rem;
+    padding: 2.2rem 1.5rem 0 0; }
+
+.cancel {
+  display: block;
+  height: 2.2rem;
+  margin: 0 0.8rem;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  line-height: 2.2rem;
+  font-size: 0.8rem;
+  color: #323232; }
+
+/******************homeCon********************/
+.homeCon {
+  background: url(../img/home_bg.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden; }
+
+.tanmu {
+  height: 3.5rem;
+  overflow: hidden;
+  margin: 0.5rem;
+  display: flex;
+  /*div{
+    position: absolute;
+    span{
+      font-size: pxToRem(28px);
+      //color:#000;
+    }
+  }*/
+  /*.marquee1,.marquee2{
+    height:pxToRem(70px);
+    ul{
+      li{
+        font-size: pxToRem(28px);
+        color:#000;
+        line-height: pxToRem(70px);
+        display: inline-block;
+        margin: 0 pxToRem(60px);
+      }
+    }
+  }*/
+  /*#roll1{
+    td{
+      font-size: pxToRem(28px);
+    }
+  }*/ }
+  .tanmu .tanmuList1, .tanmu .tanmuList2 {
+    flex: 1;
+    height: 3.5rem;
+    overflow: hidden; }
+    .tanmu .tanmuList1 li, .tanmu .tanmuList2 li {
+      font-size: 0.7rem;
+      color: #fff0de;
+      line-height: 1.25rem;
+      text-align: center; }
+
+.tanmu2 {
+  padding-top: 0.4rem;
+  box-sizing: border-box;
+  height: 2.75rem;
+  overflow: hidden;
+  display: flex;
+  /*.marquee1,.marquee2{
+    height:pxToRem(62px);
+    ul{
+      li{
+        font-size: pxToRem(28px);
+        color:#665e42;
+        line-height: pxToRem(56px);
+        display: inline-block;
+        margin: 0 pxToRem(60px);
+      }
+      &:nth-child(2){
+        margin-top: pxToRem(-12px);
+      }
+    }
+  }*/ }
+  .tanmu2 .tanmuList1, .tanmu2 .tanmuList2 {
+    flex: 1;
+    height: 2.75rem;
+    overflow: hidden; }
+    .tanmu2 .tanmuList1 li, .tanmu2 .tanmuList2 li {
+      font-size: 0.7rem;
+      color: #665e42;
+      line-height: 1.25rem;
+      text-align: center; }
+
+.allBtn {
+  width: 100%;
+  padding: 0 1.6rem;
+  position: absolute;
+  bottom: 11.4%;
+  box-sizing: border-box; }
+  .allBtn a {
+    display: block;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    font-size: 0.8rem;
+    text-align: center;
+    border: 0.05rem solid #ff8c00;
+    border-radius: 1.1rem; }
+  .allBtn .startBtn {
+    border: 1px solid #ff8c00;
+    color: #ff8c00;
+    background-color: #fff; }
+  .allBtn .downLoadBtn {
+    border: 1px solid #ff8c00;
+    color: #fff;
+    background-color: #fead4b;
+    margin-top: 0.75rem; }
+
+/******************quizCon********************/
+.resultCon {
+  background: url(../img/result_bg.png) no-repeat top;
+  background-size: 100% auto;
+  box-sizing: border-box;
+  padding: 0.8rem; }
+
+.quizCon {
+  background-color: #fff1bf;
+  box-sizing: border-box; }
+
+.questions {
+  padding: 0.8rem;
+  height: 100%;
+  box-sizing: border-box; }
+
+.queCon {
+  background-color: #fff;
+  height: 100%;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  box-sizing: border-box; }
+
+.queTextAll {
+  position: relative; }
+  .queTextAll li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%; }
+  .queTextAll .active {
+    display: block; }
+
+.timeAll {
+  display: flex;
+  margin: 0.2rem 0 0.7rem; }
+  .timeAll p {
+    font-size: 0.6rem;
+    color: #e6932e;
+    line-height: 1rem; }
+  .timeAll .queNum {
+    width: 2.1rem; }
+  .timeAll .time {
+    margin-left: 0.5rem;
+    width: 1.75rem; }
+  .timeAll .timeBar {
+    height: 1rem;
+    border: 1px solid #e5932e;
+    border-radius: 0.5rem;
+    flex: 1; }
+  .timeAll .timeBarCon {
+    float: right;
+    width: 100%;
+    height: 1rem;
+    background-color: #fead4b;
+    border-radius: 0.45rem; }
+
+.queTitle {
+  font-size: 0.8rem;
+  color: #323232;
+  line-height: 1.4rem;
+  margin-bottom: 0.95rem; }
+
+.queTextOne dd {
+  width: 100%;
+  height: 2.2rem;
+  line-height: 2.2rem;
+  font-size: 0.8rem;
+  color: #323232;
+  border: 1px solid #9d9d9d;
+  border-radius: 1.1rem;
+  margin-bottom: 0.8rem;
+  padding: 0 0.8rem;
+  box-sizing: border-box;
+  position: relative; }
+.queTextOne .select {
+  background-color: #fe764b;
+  border: none;
+  color: #fff; }
+  .queTextOne .select span {
+    height: 0.7rem;
+    position: absolute;
+    right: 0.8rem;
+    top: 50%;
+    margin-top: -0.35rem; }
+  .queTextOne .select .right {
+    width: 1.1rem;
+    background: url(../img/right_icon.png) no-repeat right;
+    background-size: 100%; }
+  .queTextOne .select .wrong {
+    width: 0.7rem;
+    background: url(../img/wrong_icon.png) no-repeat right;
+    background-size: 100%; }
+
+.downLoadAPP {
+  padding-top: 0.8rem; }
+  .downLoadAPP a {
+    display: block;
+    height: 1.75rem;
+    line-height: 1.75rem;
+    font-size: 0.8rem;
+    color: #fead4b;
+    border: 1px solid #fead4b;
+    border-radius: 0.875rem;
+    text-align: center; }
+
+/******************resultCon********************/
+.resultCon {
+  text-align: center;
+  overflow: hidden; }
+  .resultCon h3 {
+    font-size: 1rem;
+    color: #fe764b;
+    margin-top: 8.4rem; }
+  .resultCon .beat {
+    font-size: 0.7rem;
+    color: #323232;
+    line-height: 1.9rem; }
+  .resultCon h5 {
+    font-size: 0.7rem;
+    color: #b26200;
+    margin-bottom: 1rem; }
+  .resultCon a {
+    display: block;
+    width: 100%;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    text-align: center;
+    font-size: 0.8rem;
+    border-radius: 1.1rem; }
+
+.bgBtn {
+  margin-bottom: 0.75rem;
+  background-color: #fead4b;
+  color: #fff; }
+
+.borderBtn {
+  margin-bottom: 0.95rem;
+  border: 1px solid #fead4b;
+  color: #fead4b; }
+
+.explain {
+  padding: 0 0.25rem; }
+  .explain p {
+    text-align: left;
+    font-size: 0.6rem;
+    color: #9d9d9d;
+    line-height: 1.05rem;
+    margin-bottom: 0.45rem; }
+
+/*# sourceMappingURL=index.css.map */
